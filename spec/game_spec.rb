@@ -25,17 +25,17 @@ describe Game do
     describe '#claim' do
       it 'should have the correct probability that claim is correct' do
         @game.move(3, 2, 3)
-      @game.move(4, 4, 3)
-      @game.move(1, 5, 3)
-      @game.move(2, 5, 3)
-      @game.move(3, 3, 3)
-      claim = @game.claim(20, 3)
-          expect(claim).to eq(16.666666666666664)
+        @game.move(4, 4, 3)
+        @game.move(1, 5, 3)
+        @game.move(2, 5, 3)
+        @game.move(3, 3, 3)
+        claim = @game.claim(20, 3)
+        expect(claim).to eq(16.666666666666664)
       end
     end
 
     describe '#challenge' do
-      it 'should determine if a claim is true or false' dox
+      it 'should determine if a claim is true or false' do
         challenge = @game.challenge(19, 3)
         expect(challenge).to be false
       end
